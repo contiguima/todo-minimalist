@@ -8,3 +8,18 @@
     font-family: "Kanit", sans-serif;
   }
 }
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animate-typing {
+  animation: typing 4s steps(27) 1s 1 normal both, blink 1s steps(1) infinite;
+  overflow: hidden;
+  white-space: nowrap;
+}
