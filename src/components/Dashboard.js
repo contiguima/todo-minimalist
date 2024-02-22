@@ -1,5 +1,6 @@
 "use client"
 import { useState, useEffect} from "react";
+import Task from "./Task";
 
 const Dashboard =  () => {
 
@@ -33,7 +34,15 @@ const Dashboard =  () => {
             
         </div>
         
-        <div className="dashboardgral">
+        <div className=" border-2 border-dashed border-white min-h-screen min-w-full">
+          <ul className="flex flex-col gap-5 p-3 border-2 border-solid border-white items-center ">
+            <Task
+            description="Buy new shoes"
+            />
+            <Task
+            description="Buy new shoes"
+            />
+          </ul>
 
         </div>
 
