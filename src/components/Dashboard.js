@@ -15,7 +15,7 @@ const Dashboard =  () => {
         setIsMobileView(event.matches);
       };
 
-      handleMediaQueryChange(mobileMediaQuery); //Inicialmente
+      handleMediaQueryChange(mobileMediaQuery);
       mobileMediaQuery.addEventListener('change', handleMediaQueryChange);
 
       return() =>{
@@ -30,14 +30,14 @@ const Dashboard =  () => {
             maxLength={80}
             placeholder="I want to..."
             className=" text-lg sm:text-xl font-light min-w-64 sm:min-w-[500px] bg-black  py-2 px-4 rounded-full border-2 border-white"></input>
-            {isMobileView? <button className=" w-9 h-9 bg-white text-black rounded-full self-center">+</button> : <button className=" text-black font-bold bg-white rounded-full py-2 px-6">Add Task</button>}
+            {isMobileView? <button className=" w-9 h-9 bg-white text-black rounded-full self-center hover:bg-gradient-to-r  hover:from-silver-1 hover:to-white">+</button> : <button className=" text-black font-bold bg-white rounded-full py-2 px-6 hover:bg-gradient-to-r  hover:from-silver-1 hover:to-white">Add Task</button>}
             
         </div>
         
         <div className=" border-2 border-dashed border-white min-h-screen min-w-full">
-          <ul className="flex flex-col gap-5 p-3 border-2 border-solid border-white items-center ">
+          <ul className="flex flex-col gap-5 sm:p-3 border-2 border-solid border-white items-cente ">
             <Task
-            description="Buy new shoes"
+            description="Call mom"
             />
             <Task
             description="Buy new shoes"
